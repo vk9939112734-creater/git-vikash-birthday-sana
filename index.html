@@ -279,6 +279,8 @@
     <div class="caption" id="caption">Pull &amp; release</div>
   </div>
 
+  <audio id="myAudio" src="Upasana(MP3_160K).mp3.mpeg" autoplay=""></audio>
+
   <!-- SCENE 2 -->
   <div class="scene2" id="scene2">
     <div class="tree-wrap">
@@ -325,6 +327,11 @@
   const caption = document.getElementById('caption');
   const replayBtn = document.getElementById('replayBtn');
   const petalsHost = document.getElementById('petals');
+  const audio = document.getElementById('myAudio');
+
+   function playAudio() {
+        audio.play();
+    }
 
   const REST_X = 200, MIN_X = 130, ANCHOR_Y = 150;
   let dragging = false;
